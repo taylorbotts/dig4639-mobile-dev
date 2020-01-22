@@ -13,3 +13,9 @@ I’m a soon to be graduating Web Design major minoring in Computer Science with
 
 
 [Current Portfolio](taylorbotts.com) (Work in progress)
+
+
+## Merging
+- Item 1
+- Item 2
+- Item 3
