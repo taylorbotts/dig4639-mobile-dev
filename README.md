@@ -13,3 +13,7 @@ I’m a soon to be graduating Web Design major minoring in Computer Science with
 
 
 [Current Portfolio](taylorbotts.com) (Work in progress)
+
+## Conflicts
+
+Here's some code that isn't on the local repo
