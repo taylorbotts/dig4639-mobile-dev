@@ -30,10 +30,6 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-<<<<<<< HEAD
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}/ice/w2a"
-=======
             "url": "http://localhost:8000",
             "webRoot": "${workspaceFolder}/ice/w4/src",
             "trace":"verbose",
@@ -42,7 +38,6 @@
             "sourceMapPathOverrides": {
               "*": "${webRoot}/*"
             }
->>>>>>> 5d8fe604b09a7977b9cf21310e957ee9c41efca7
         }
     ]
 }
