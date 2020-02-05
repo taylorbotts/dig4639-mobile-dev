@@ -19,9 +19,11 @@ class Task {
         if (e.target.checked){
             this.props.done = true;
             this.element.style.textDecoration = 'line-through';
+            this.element.style.backgroundColor = 'red';
         } else {
             this.props.done = false;
             this.element.style.textDecoration = 'none';
+            this.element.style.backgroundColor = 'lavender';
         }
     }
     render() {
