@@ -1,5 +1,6 @@
 body {
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .task {
@@ -8,6 +9,7 @@ body {
 
 .header {
     background-color: lightblue;
+    
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -15,22 +17,31 @@ p {
     text-align: center;
     color: white;
     font-style: bold;
+    text-transform: uppercase;
 }
 
 .addTaskPane {
+    width: 50%;
     margin: auto;
+    text-align: center;
 }
 
 #taskText {
     padding: 1rem;
-    width: 30%;
+
+    border-radius: 10px;
 }
 
 #addTask {
     padding: 1rem 3rem;
+
     background-color: lightsalmon;
     border: none;
     border-radius: 10px;
+}
+
+#container {
+    text-align: left;
 }
 
 @media screen and (max-width: 760px){

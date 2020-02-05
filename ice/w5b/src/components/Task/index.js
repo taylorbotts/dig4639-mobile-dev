@@ -19,10 +19,10 @@ class Task {
         if (e.target.checked){
             this.props.done = true;
             this.element.style.textDecoration = 'line-through';
+        } else {
+            this.props.done = false;
+            this.element.style.textDecoration = 'none';
         }
-        console.log(this);
-        console.log(e.target);
-        console.log(e.target.checked);
     }
     render() {
         return this.element;

@@ -6,7 +6,8 @@ function runOnLoad()
     // Create a container for us
     element = document.createElement("div");
     element.id = "container";
-    document.body.appendChild(element);
+    let addTaskPane = document.querySelector(".addTaskPane")
+    addTaskPane.appendChild(element);
     input = document.getElementById("taskText");
     // Handle adding a new task
     var addTaskButton = document.getElementById("addTask");
