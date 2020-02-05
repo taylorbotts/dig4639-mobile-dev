@@ -18,6 +18,7 @@ function onClick() {
     if (input.value){
         var newTask = new Task({content:input.value,done:false});
         element.appendChild(newTask.render());
+        input.value = "";
     } 
 }
 
