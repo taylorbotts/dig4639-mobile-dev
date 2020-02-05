@@ -16,6 +16,10 @@ class Task {
         this.element.className = "task";
     }
     onClick(e) {
+        if (e.target.checked){
+            this.props.done = true;
+            this.element.style.textDecoration = 'line-through';
+        }
         console.log(this);
         console.log(e.target);
         console.log(e.target.checked);
