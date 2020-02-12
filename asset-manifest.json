@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dig4639-mobile-dev/static/css/main.67d839ee.chunk.css",
+    "main.js": "/dig4639-mobile-dev/static/js/main.68af778e.chunk.js",
+    "main.js.map": "/dig4639-mobile-dev/static/js/main.68af778e.chunk.js.map",
+    "runtime-main.js": "/dig4639-mobile-dev/static/js/runtime-main.e7bb69b4.js",
+    "runtime-main.js.map": "/dig4639-mobile-dev/static/js/runtime-main.e7bb69b4.js.map",
+    "static/js/2.3ded2b1a.chunk.js": "/dig4639-mobile-dev/static/js/2.3ded2b1a.chunk.js",
+    "static/js/2.3ded2b1a.chunk.js.map": "/dig4639-mobile-dev/static/js/2.3ded2b1a.chunk.js.map",
+    "index.html": "/dig4639-mobile-dev/index.html",
+    "precache-manifest.817f2baba03d4bb714941279a9bcaa9e.js": "/dig4639-mobile-dev/precache-manifest.817f2baba03d4bb714941279a9bcaa9e.js",
+    "service-worker.js": "/dig4639-mobile-dev/service-worker.js",
+    "static/css/main.67d839ee.chunk.css.map": "/dig4639-mobile-dev/static/css/main.67d839ee.chunk.css.map",
+    "static/js/2.3ded2b1a.chunk.js.LICENSE.txt": "/dig4639-mobile-dev/static/js/2.3ded2b1a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7bb69b4.js",
+    "static/js/2.3ded2b1a.chunk.js",
+    "static/css/main.67d839ee.chunk.css",
+    "static/js/main.68af778e.chunk.js"
+  ]
+}
