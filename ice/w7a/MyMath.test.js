@@ -1,17 +1,17 @@
-import { Sum, AddList, DivideBy, ContainsString } from './MyMath.js'
+import { Sum, AddList, DivideBy, ContainsString, ReSortedNumbers } from './MyMath.js'
 
 describe ("Sum", () => {
 
-  test('Whether undefined is returned on invalid type', () => {
-    expect(Sum(1,'Test')).toBeUndefined()
+  test ('Whether undefined is returned on invalid type', () => {
+    expect (Sum(1,'Test')).toBeUndefined()
   })
 
-  test('adds 1 + 2 to equal 3', () => {
-    expect(Sum(1, 2)).toBe(3)
+  test ('adds 1 + 2 to equal 3', () => {
+    expect (Sum(1, 2)).toBe(3)
   })
 
-  it('adds 0 + 0 to equal 0', () => {
-    expect(Sum(0, 0)).toBe(0)
+  it ('adds 0 + 0 to equal 0', () => {
+    expect (Sum(0, 0)).toBe(0)
   })
 })
 
@@ -25,12 +25,16 @@ describe ('AddList', () => {
     expect (AddList(emptyArray)).toBeUndefined()
   })
 
-  test('Whether all values are numbers', () => {
-    expect(AddList(arrayNotNumber)).toBeUndefined()
+  test ('Whether all values are numbers', () => {
+    expect (AddList(arrayNotNumber)).toBeUndefined()
   })
 
-  test('Whether 1 + 2 + 3 = 6', () => {
-    expect(AddList(array)).toBe(6)
+  test ('If parameter is not an array, return undefined', () => {
+    expect (AddList('test')).toBeUndefined()
+  })
+
+  test ('Whether 1 + 2 + 3 = 6', () => {
+    expect (AddList(array)).toBe(6)
   })
 })
 
@@ -73,6 +77,13 @@ describe ('ContainsString', () => {
 
   test ('If first paramater is not a string, return undefined', () => {
     expect (ContainsString(1,'ok')).toBeFalsy()
+  })
+})
+
+describe ('ReSortedNumbers', () => {
+  let notNumberArr = [1, 2, 'no']
+  test('If any values are not a number, return undefined', () => {
+    expect(ReSortedNumbers(notNumberArr)).toBeUndefined()
   })
 })
 

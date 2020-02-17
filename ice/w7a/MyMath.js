@@ -8,7 +8,7 @@ function Sum (a, b) {
 
 function AddList (arr) {
   let result = undefined
-  if (arr.length){
+  if (Array.isArray(arr) && arr.length){
     result = 0
     for (let i = 0; i < arr.length; i++) {
       if (typeof arr[i] != 'number'){
@@ -42,9 +42,21 @@ function ContainsString (str, substr) {
 }
 
 function ReSortedNumbers (arr) {
-
+  let result = []
+  if (Array.isArray(arr) && arr.length) {
+    for (let i = 0; i < arr.length; i++) {
+      if (typeof arr[i] != 'number') {
+        result = undefined
+        break
+      }
+    }
+    if(result){
+      result = arr.sort(function (a, b) { return a - b })
+    }
+  }
+  return result
 }
 
 //console.log(Sum(-10,0));
 
-export { Sum, AddList, DivideBy, ContainsString };
+export { Sum, AddList, DivideBy, ContainsString, ReSortedNumbers };
