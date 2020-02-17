@@ -63,11 +63,15 @@ describe ('ContainsString', () => {
     expect (ContainsString('hello','ello')).toBeTruthy()
   })
 
-  test ('If second parameter is not a string, return false', () => {
+  test ('If second parameter is not a substring of first, return false', () => {
+    expect (ContainsString('hello','goodbye')).toBeFalsy()
+  })
+
+  test ('If second parameter is not a string, return undefined', () => {
     expect (ContainsString('hello', 23)).toBeFalsy()
   })
 
-  test ('If first paramater is not a string, return false', () => {
+  test ('If first paramater is not a string, return undefined', () => {
     expect (ContainsString(1,'ok')).toBeFalsy()
   })
 })

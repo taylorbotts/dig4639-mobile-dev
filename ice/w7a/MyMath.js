@@ -31,16 +31,19 @@ function DivideBy (x, y) {
 }
 
 function ContainsString (str, substr) {
-  let result = false
+  let result = undefined
   if (typeof str == 'string' && typeof substr == 'string'){
-    if (str.includes(substr))
+    if (str.includes(substr)){
     result = true
+    } else {
+      result = false
+    }
   }
   return result
 }
 
 function ReSortedNumbers (arr) {
-  
+
 }
 
 //console.log(Sum(-10,0));
