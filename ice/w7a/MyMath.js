@@ -30,8 +30,17 @@ function DivideBy (x, y) {
   return result
 }
 
-function ContainsString () {
+function ContainsString (str, substr) {
+  let result = false
+  if (typeof str == 'string' && typeof substr == 'string'){
+    if (str.includes(substr))
+    result = true
+  }
+  return result
+}
 
+function ReSortedNumbers (arr) {
+  
 }
 
 //console.log(Sum(-10,0));

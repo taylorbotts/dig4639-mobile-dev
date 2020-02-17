@@ -57,6 +57,21 @@ describe ('DivideBy', () => {
   })
 })
 
+describe ('ContainsString', () => {
+
+  test ('If hello contains ello, return true', () => {
+    expect (ContainsString('hello','ello')).toBeTruthy()
+  })
+
+  test ('If second parameter is not a string, return false', () => {
+    expect (ContainsString('hello', 23)).toBeFalsy()
+  })
+
+  test ('If first paramater is not a string, return false', () => {
+    expect (ContainsString(1,'ok')).toBeFalsy()
+  })
+})
+
 // ICE 
 
 // Examples for Null
