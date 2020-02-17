@@ -11,12 +11,11 @@ function AddList (arr) {
   if (arr.length){
     result = 0
     for (let i = 0; i < arr.length; i++) {
-      if (typeof arr[i] == 'number'){
-        result += arr[i]
-     } else {
-       result = undefined
-       break
-     }
+      if (typeof arr[i] != 'number'){
+        result = undefined
+        break
+      }
+      result += arr[i]
     }
   }
   return result
