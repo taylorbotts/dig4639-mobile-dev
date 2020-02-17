@@ -15,14 +15,14 @@ class Pet {
     return 'I make this sound: '
   }
 
-    getIdentity = () => {
-      console.log(this)
-    }
+  getIdentity = () => {
+    console.log(this)
+  }
 
-    // getSum = (a,b) => a + b
-    getSum = (a, b) => {
-      return a + b
-    }
+  // getSum = (a,b) => a + b
+  getSum = (a, b) => {
+    return a + b
+  }
 }
 
 class Cat extends Pet {
