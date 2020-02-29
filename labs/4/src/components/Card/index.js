@@ -1,6 +1,5 @@
 import React from 'react'
 import './index.css'
-import CardList from '../CardList'
 
 class Card extends React.Component {
   constructor (props) {

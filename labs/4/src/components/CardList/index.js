@@ -14,7 +14,6 @@ class CardList extends React.Component {
     let cardData = this.state.cardData
     cardData = cardData.filter((v) => v.title !== title)
     this.setState({cardData})
-    console.log("click")
   }
 
   render () {
