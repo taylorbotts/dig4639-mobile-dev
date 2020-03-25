@@ -18,6 +18,7 @@
   "homepage": "https://github.com/lucidbard/dig4639-mobile-dev#readme",
   "dependencies": {
     "babel-eslint": "^10.0.3",
+    "cors": "^2.8.5",
     "jest": "^24.9.0"
   },
   "directories": {
