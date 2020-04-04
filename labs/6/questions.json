@@ -1,0 +1,103 @@
+[
+  {
+    "question": "What is the actual name of the coronavirus?",
+    "answers" :
+    [
+      {"text": "The Chinese Flu",
+      "correct": false
+      },
+      {
+        "text": "COVID-19",
+        "correct": true
+      },
+      {
+        "text": "COVE-20",
+        "correct": false
+      },
+      {
+        "text": "The Big Sick",
+        "correct": false
+      } 
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a symptom of COVID-19?",
+    "answers": [
+      {
+        "text": "Coughing",
+        "correct": false
+      },
+      {
+        "text": "Fever",
+        "correct": false
+      },
+      {
+        "text": "Fatigue",
+        "correct": false
+      },
+      {
+        "text": "Sneezing",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "During the pandemic, should you leave your house for anything that isn't absolutely essential?",
+    "answers": [
+      {
+        "text": "Nope",
+        "correct": true
+      },
+      {
+        "text": "Absolutely not",
+        "correct": true
+      },
+      {
+        "text": "HELL NO",
+        "correct": true
+      },
+      {
+        "text": "[in Spanish] No",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "While practicing social distancing, how far apart should you stay from others?",
+    "answers": [
+      {
+        "text": "6 inches",
+        "correct": false
+      },
+      {
+        "text": "6 feet",
+        "correct": true
+      },
+      {
+        "text": "One alligator",
+        "correct": true
+      },
+      {
+        "text": "As far as physically possible. Lock your doors, shut the windows, change your phone number. Forget everyone. You don't need them. Just stay isolated. This is your life now.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Should you panic?",
+    "answers": [
+      {
+        "text": "Too late, I'm having a panic attack",
+        "correct": false
+      },
+      {
+        "text": "No! If society hasn't collapsed, if we all just stay home, stay calm, and be smart, everything will be okay and we will get through this.",
+        "correct": true
+      },
+      {
+        "text": "I will do whatever the news tells me to do",
+        "correct": false
+      }
+    ]
+  }
+]

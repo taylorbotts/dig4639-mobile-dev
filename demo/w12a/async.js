@@ -12,6 +12,7 @@ function promisedOne () {
       console.log('1 second passed!')
       resolve()
     }
+    setTimeout(asyncFunction, 1000)
   })
 }
 

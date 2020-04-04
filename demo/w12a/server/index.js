@@ -1,5 +1,8 @@
+// server/index.js
 // https://expressjs.com/en/starter/hello-world.html
 const express = require('express')
+const fetch = require("node-fetch");
+const cors = require('cors')
 const app = express()
 const port = 3001
 const cors = require('cors')
