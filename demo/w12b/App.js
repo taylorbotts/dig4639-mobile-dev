@@ -1,43 +1,51 @@
-import React from 'react'
-import { StyleSheet, Text, View, Button, ListView, TextInput } from 'react-native'
+import React from 'react';
+import { StyleSheet, Text, View, Button, ListView, TextInput, CheckBox } from 'react-native';
+
+class TodoItem extends React.Component {
+  state={}
+  render() {
+    return <View style={{ flexDirection:'row' }}>
+      <CheckBox style={{marginTop:12}} value={this.state.checked} onValueChange={() => this.setState({ checked: !this.state.checked })}></CheckBox>
+    <Text style={{fontSize:30, marginLeft: 10}}>{this.props.content}</Text>
+    </View>
+  }
+}
 
 export default class App extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
-    this.rows = ['this is 1', 'this is 2', 'this is 3']
-    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
+    this.rows = ['This is 1', 'This is 2', 'This is 3']
+    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      content: 'Hello world!',
+      content: "Hello World",
       dataSource: ds.cloneWithRows(this.rows),
-      currentItem: 3
-    }
+      currentItem: 3,
+      todoText: ""
   }
+    // console.log("Hello World!!!")
+  } 
 
-  onPressHandler (e) {
-    console.log('Clicked!')
-    console.log(this.state)
-    this.setState({ content: 'Hello React Native world!' })
-    this.rows.push('new data')
-    this.setState({ dataSource: this.state.dataSource.cloneWithRows([this.rows]) })
-    console.log(this.state)
+  onPressHandler(evt) {
+    console.log("Clicked!!")
+    this.rows = [...this.rows, this.state.todoText]
+    console.log(this.state.todoText)
+    this.setState({dataSource: this.state.dataSource.cloneWithRows(
+      this.rows)})
   }
-
-  render () {
+  
+  render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>Enter a new task:</Text>
-        <TextInput></TextInput>
-        <Button title='Click Me' onPress={(e) => this.onPressHandler(e)}></Button>
+        <View style={{flexDirection:'row'}}>
+          <TextInput onChangeText={todoText => this.setState({todoText})} ></TextInput>
+          <Button style={styles.button} color="#990000" title="Click Me" onPress={(evt) => this.onPressHandler(evt)}></Button>
+        </View>
         <ListView
-          dataSource={this.state.dataSource}
-          renderRow={(rowData) =>
-            <View>
-              <Button title="Complete"></Button>
-              <Text key={rowData.id}>{rowData}</Text>
-            </View>}
-        />
+        dataSource={this.state.dataSource}
+        renderRow={(rowData) => <TodoItem content={rowData} />}
+      />
       </View>
-    )
+    );
   }
 }
 
@@ -46,6 +54,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+  },
+  header: {
+    fontSize: 22
+  },
+  button: {
+
   }
-})
+});

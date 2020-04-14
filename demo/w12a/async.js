@@ -16,7 +16,11 @@ function promisedOne () {
   })
 }
 
-async function iNSync () {
+promisedOne()
+  .then(
+    (value)=>{console.log("Resolved with " + value)})
+
+async function iNSync() {
   let value = await promisedOne()
   console.log("I'm done!!" + value)
   value = await promisedOne()
